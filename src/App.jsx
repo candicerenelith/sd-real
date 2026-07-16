@@ -390,7 +390,7 @@ function LivePreview({ selections, onClickCta }) {
       <PanelHeader
         label="LIVE PREVIEW"
         tagClassName="bg-sky text-teal-deep"
-        hint="🔄 Berubah otomatis begitu kamu klik tombol warna-warni"
+        hint="Berubah otomatis begitu kamu klik tombol warna-warni"
       />
 
       <div className="mx-3.5 mt-2 flex flex-shrink-0 items-center gap-2 rounded-lg bg-mist px-3.5 py-1.5 text-xs font-bold text-muted">
@@ -476,12 +476,12 @@ function CodeEditor({ selections, onOpenPicker }) {
       <PanelHeader
         label="CODE EDITOR"
         tagClassName="bg-ink text-lavender-100"
-        hint="👉 Klik tombol berwarna untuk mengubah website-mu"
+        hint="Klik tombol berwarna untuk mengubah website-mu"
       />
 
       <div className="m-3 min-h-0 flex-1 overflow-y-auto rounded-2xl bg-code-bg px-2 py-3 font-mono text-sm text-code-text [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         <CodeLine n={1} italic>
-          &lt;!-- Website kamu sendiri! 🎉 --&gt;
+          &lt;!-- Website kamu sendiri! --&gt;
         </CodeLine>
         <CodeLine n={2}>
           <Html>&lt;!DOCTYPE html&gt;</Html>
@@ -569,7 +569,7 @@ function CodeEditor({ selections, onOpenPicker }) {
       </div>
 
       <div className="mx-4 mb-3 mt-1 flex flex-shrink-0 items-center gap-1.5 text-xs font-semibold text-muted">
-        ✨ Coba klik semua tombol warna-warni, lihat apa yang berubah di sebelah
+        Coba klik semua tombol warna-warni, lihat apa yang berubah di sebelah
         kiri!
       </div>
     </Panel>
@@ -612,7 +612,7 @@ function MissionBar({ completedMissions }) {
 
       <div className="flex flex-shrink-0 items-center gap-2">
         <span className="flex-shrink-0 whitespace-nowrap text-xs font-extrabold text-muted">
-          🎖️ LENCANA
+          LENCANA
         </span>
         <div className="flex gap-2">
           {MISSIONS.map((m) => {
@@ -749,16 +749,16 @@ export default function App() {
           </div>
           <div>
             <h1 className="m-0 text-xl font-extrabold">
-              Bengkel Website Ceria
+              Buat Website Sendiri!
             </h1>
             <p className="m-0 text-xs font-medium text-muted">
-              Jadi web developer cilik — klik, ganti, lihat keajaibannya!
+              Jadi web developer cilik
             </p>
           </div>
         </div>
         <div className="flex flex-wrap gap-2.5">
           <StatPill tone="honey">
-            🎯 {missionsDoneCount}/{MISSIONS.length} Misi
+            {missionsDoneCount}/{MISSIONS.length} Misi
           </StatPill>
           <StatPill tone="mint">🟢 Online</StatPill>
         </div>
