@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Space+Mono:wght@400;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Warna dasar */
+  --color-cream: #fff9ec;
+  --color-ink: #2b2250;
+  --color-inkdeep: #20143a;
+  --color-paper: #ffffff;
+
+  /* Warna aksen brand */
+  --color-sun: #ffc93c;
+  --color-coral: #ff6b6b;
+  --color-sky: #3fc1c9;
+  --color-grape: #8c6eff;
+  --color-leaf: #5fcb6c;
+  --color-teal-deep: #003b3e;
+
+  /* Permukaan & border netral */
+  --color-lilac: #ece6ff;
+  --color-mist: #f5f2ff;
+  --color-mist-2: #f1eefd;
+  --color-muted: #8a83a8;
+
+  /* Status: misi & lencana */
+  --color-honey: #fff1ce;
+  --color-honey-text: #9a6a00;
+  --color-honey-border: #ffd98a;
+  --color-mint: #e9fbec;
+  --color-mint-text: #1e7a2e;
+  --color-mint-border: #b7efc0;
+
+  /* Aksen dekoratif tiap baris kode (chip) */
+  --color-tag-html: #ff9ac1;
+  --color-tag-attr: #8fd3fe;
+  --color-peach: #ffd9a0;
+  --color-lavender-chip: #cdbbff;
+  --color-lavender-100: #f4eeff;
+
+  /* Editor kode */
+  --color-code-bg: #1e1836;
+  --color-code-text: #cfc7f5;
+  --color-code-linenum: #5c5480;
+  --color-code-comment: #6c6491;
+
+  /* Tipografi */
+  --font-heading: "Baloo 2", sans-serif;
+  --font-mono: "Space Mono", monospace;
+
+  /* "Hard shadow" khas desain ini (bukan blur, tapi solid offset) */
+  --shadow-card: 0 6px 0 var(--color-lilac);
+  --shadow-chip: 0 3px 0 rgba(0, 0, 0, 0.18);
+  --shadow-mascot: 0 5px 0 #5c3fc4;
+  --shadow-modal: 0 12px 0 rgba(0, 0, 0, 0.15);
+  --shadow-toast: 0 8px 20px rgba(0, 0, 0, 0.2);
+  --shadow-cta: 0 6px 0 rgba(0, 0, 0, 0.18);
+  --shadow-bubble: 0 4px 0 rgba(0, 0, 0, 0.06);
+  --shadow-avatar: 0 8px 0 rgba(0, 0, 0, 0.08);
+
+  /* Animasi */
+  --animate-bob: bwc-bob 3s ease-in-out infinite;
+  --animate-fall: bwc-fall 3s linear forwards;
+}
+
+@keyframes bwc-bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-5px) rotate(3deg);
+  }
+}
+
+@keyframes bwc-fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0.8;
+  }
+}
